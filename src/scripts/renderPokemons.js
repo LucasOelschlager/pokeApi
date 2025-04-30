@@ -1,6 +1,6 @@
-const list = document.querySelector('.pokemonCards-container');
+export const list = document.querySelector('.pokemonCards-container');
 import { fetchPokemonsData } from "./main";
-const renderPokemons = (arr) => {
+export const renderPokemons = (arr) => {
     if (!arr || arr.length === 0) {
         console.error("No hay datos para renderizar.");
         return;

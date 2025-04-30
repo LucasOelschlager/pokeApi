@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="src/scripts/renderPokemons.js"></script>
     <script type="module" src="src/scripts/main.js"></script>
+    <script type="module" src="src/scripts/pagination.js"></script>
     <link rel="stylesheet" href="src/styles/style.css">
 
     <title>PokeApi</title>
@@ -36,10 +37,10 @@
           </ul>
         </div>
         <div class="pagination">
-          <div class="buttons">
-            <button class="prev" id="prev">Prev</button>
-            <span class="page" id="page">1</span>
-            <button class="next" id="next">Next</button>
+          <div class="buttons" id="buttonsPagination">
+            <button class="btnPrev" id="prev">Prev</button>
+            <span class="page" id="page"></span>
+            <button class="btnNext" id="next">Next</button>
           </div>
       </div>
     </section>

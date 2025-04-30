@@ -1,6 +1,5 @@
 
-let page = 0
-export const fetchPokemonsData = async () => {
+export const fetchPokemonsData = async (page) => {
     let pokemonsData = []
     const url = `https://pokeapi.co/api/v2/pokemon/?offset=${20 * page}&limit=20`
     try {
