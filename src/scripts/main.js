@@ -15,11 +15,12 @@ export const fetchPokemonsData = async () => {
             try{
                 const response = await fetch(pokemon.url)
                 const pokemonData = await response.json()
-                pokemonsData.push({name: pokemonData.name, img: [pokemonData.sprites], tipo: pokemonData.types})
+                pokemonsData.push({name: pokemonData.name, img: [pokemonData.sprites], tipo: pokemonData.types, stats: pokemonData.stats, id: pokemonData.id})
             }catch(err){
                 console.error(err.status)
             }
           }
+          console.log(pokemonsData)
         }
     }catch(err){
         console.error(err.message)

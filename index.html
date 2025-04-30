@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="src/scripts/renderPokemons.js"></script>
     <script type="module" src="src/scripts/main.js"></script>
+    <link rel="stylesheet" href="src/styles/style.css">
 
     <title>PokeApi</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
+     <nav class="navbar">
+  
         <ul class="navbarList">
+          <li class="navbar__item">
+            <a href="/" class="navbar__link">Poke<span>Api</span></a>
+          </li>
           <li class="navbar__item">
             <a href="/" class="navbar__link">Home</a>
           </li>
@@ -24,14 +28,20 @@
           </li>
         </ul>
       </nav>
-    </header>
     <section id="poke-info">
+      <h4>PokeApi</h4>
         <div class="pokemon-container">
           <ul class="pokemonCards-container">
 
           </ul>
         </div>
-
+        <div class="pagination">
+          <div class="buttons">
+            <button class="prev" id="prev">Prev</button>
+            <span class="page" id="page">1</span>
+            <button class="next" id="next">Next</button>
+          </div>
+      </div>
     </section>
   </body>
 </html>

@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+
+/*HEADER*/
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        height: 80px;
+        
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+            width: 100%;
+            height: 100%;
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                padding: 0 20px;
+                font-size: 20px;
+                font-weight: bold;
+                color: #f5f5f5;
+                text-decoration: none;
+                border-radius: 10px;
+                transition: background-color 0.3s, transform 0.3s;
+
+                input{
+                    width: 200px;
+                    height: 40px;
+                    border-radius: 10px;
+                    border: none;
+                    padding: 0 10px;
+                    font-size: 16px;
+                    color: #1f1f1f;
+                    background-color: #f5f5f5;
+                    transition: background-color 0.3s, transform 0.3s;
+
+                    &:focus{
+                        outline: none;
+                        box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+                        transform: scale(1.05);
+                    }
+                }
+
+            
+
+                a{
+                    text-decoration: none;
+                    color: #f5f5f5;
+                }
+            }
+
+        }
+    }
+
+    .navbar__item:first-child{
+        width: 400px;
+        color: #1f1f1f;
+        font-size: 3rem;
+
+        span{
+            color: #ffcc00;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+
+
+
+/*SECCION POKEMONS*/
+
+.pokemon-container {
+    display: flex;
+    flex: calc(100vh - 20px);
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px;
+    background: linear-gradient(135deg, #2e2e2e, #4a4a4a);
+    border-radius: 15px;
+}
+
+.pokemonCards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: #3b3b3b;
+    border-radius: 15px;
+}
+
+.pokemon-card {
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    padding: 25px;
+    width: 350px;
+    margin: 15px;
+    text-align: center;
+    color: #f5f5f5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    list-style: none;
+
+    h4 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 15px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #f5f5f5;
+    }
+
+    span {
+        font-size: 22px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 15px;
+        padding: 0 20px;
+    }
+}
+
+.stats {
+    li {
+        list-style: none;
+        margin: 8px 0;
+        font-size: 16px;
+        color: #e0e0e0;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        background-color: #3b3b3b;
+        border-radius: 5px;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+/*paginacion*/
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    height: 50px;
+
+    button {
+        background-color: #ffcc00;
+        color: #1f1f1f;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0 5px;
+        transition: background-color 0.3s, transform 0.3s;
+
+        &:hover {
+            background-color: #e6b800;
+            transform: scale(1.05);
+        }
+    }
+
+    span {
+        font-size: 18px;
+        color: #f5f5f5;
+        margin: 0 10px;
+    }
+}
